@@ -11,4 +11,4 @@ echo "marathon = $MARATHON_LIST" >> /etc/nixy.toml
 
 nginx
 
-exec nixy -f /etc/nixy.toml
+exec nixy -f /mnt/mesos/sandbox/nixy.toml
