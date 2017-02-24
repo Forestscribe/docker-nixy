@@ -8,7 +8,8 @@
 
 
 echo "marathon = $MARATHON_LIST" >> /mnt/mesos/sandbox/nixy.toml
-
+cp  /etc/nginx/nginx.conf  /mnt/mesos/sandbox/nginx.conf
+ln -sf /mnt/mesos/sandbox/nginx.conf /etc/nginx/nginx.conf
 nginx
 
 exec nixy -f /mnt/mesos/sandbox/nixy.toml
