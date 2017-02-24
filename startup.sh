@@ -7,7 +7,7 @@
 #
 
 
-echo "marathon = $MARATHON_LIST" >> /etc/nixy.toml
+echo "marathon = $MARATHON_LIST" >> /mnt/mesos/sandbox/nixy.toml
 
 nginx
 

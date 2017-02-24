@@ -4,7 +4,7 @@ MAINTAINER js @ Generik Ltd
 
 RUN apk add --no-cache nginx && echo "pid /run/nginx.pid;" >> /etc/nginx/nginx.conf
 
-ARG NIXY_VERSION=0.7.2
+ARG NIXY_VERSION=0.8.2
 ARG NIXY_RELEASE=nixy_${NIXY_VERSION}_linux_amd64
 
 ADD https://github.com/martensson/nixy/releases/download/v${NIXY_VERSION}/${NIXY_RELEASE}.tar.gz /tmp/nixy.tgz
